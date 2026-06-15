@@ -29,18 +29,18 @@ export default function HomePage() {
           <div className="section-head">
             <span className="eyebrow center" data-animate>Welcome</span>
             <h2 data-animate data-delay="1">A family-run team you can trust</h2>
-            <p data-animate data-delay="2">All Tree &amp; Garden Care Ltd is a family-run landscaping and tree care company based in Tooting, SW17. We&apos;ve been transforming outdoor spaces for domestic and commercial customers across London for over 10 years — with attention to detail, high-quality materials and a no-job-too-big-or-too-small attitude.</p>
+            <p data-animate data-delay="2">All Tree &amp; Garden Care is a family-run business based in Tooting, SW17. We&apos;ve been working on gardens and outdoor spaces for domestic and commercial customers across London for over 10 years. We care about the details, we use quality materials and we&apos;re happy to take on any size of job.</p>
           </div>
-          <div className="tiles tiles-2" style={{ marginTop: '8px' }}>
-            <div className="text-tile feature-tile" data-animate data-delay="1">
-              <span className="tile-tag"><i data-lucide="sparkles"></i> Every project is unique</span>
-              <h3>Eye-catching, functional &amp; easy to maintain</h3>
-              <p>We put our own unique twist on every project — whether it&apos;s a period-style Victorian path or a full garden transformation. Nothing is off the shelf.</p>
+          <div className="tiles tiles-2" style={{ marginTop: '8px', marginBottom: '60px' }}>
+            <div className="text-tile feature-tile" data-animate data-delay="1" style={{ textAlign: 'center' }}>
+              <span className="tile-tag" style={{ justifyContent: 'center' }}><i data-lucide="sparkles"></i> Every project is unique</span>
+              <h3>Eye-catching, functional and easy to maintain</h3>
+              <p>Every job gets its own personal touch. Whether it&apos;s a Victorian mosaic path or a full garden overhaul, we don&apos;t do cookie-cutter. You&apos;ll get something that actually suits you.</p>
             </div>
-            <div className="text-tile feature-tile" data-animate data-delay="2">
-              <span className="tile-tag"><i data-lucide="check-check"></i> Free, no-obligation quotes</span>
-              <h3>Honest advice from the people doing the work</h3>
-              <p>We come to you, take a proper look, and give you a clear price with no hidden extras. Call us today and we&apos;ll get you booked in quickly.</p>
+            <div className="text-tile feature-tile" data-animate data-delay="2" style={{ textAlign: 'center' }}>
+              <span className="tile-tag" style={{ justifyContent: 'center' }}><i data-lucide="check-check"></i> Free, no-obligation quotes</span>
+              <h3>Straight advice, clear prices, no surprises</h3>
+              <p>We come out to you, have a look at what you need and give you a proper price. No hidden costs, no hard sell. Just give us a call and we&apos;ll take it from there.</p>
             </div>
           </div>
         </div>

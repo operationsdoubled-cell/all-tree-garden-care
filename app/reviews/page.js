@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TrustindexWidget from '@/components/TrustindexWidget';
 
 export const metadata = {
   title: 'Reviews | All Tree & Garden Care Ltd',
@@ -16,7 +17,7 @@ const reviews = [
     initial: 'T',
     name: 'Verified Customer',
     meta: 'TrustATrader Review',
-    text: 'The team have been excellent, both with communication and getting the job done in the garden. I\'ve been really impressed and will definitely be using them again.',
+    text: "The team have been excellent, both with communication and getting the job done in the garden. I've been really impressed and will definitely be using them again.",
   },
   {
     initial: 'V',
@@ -28,7 +29,7 @@ const reviews = [
     initial: 'V',
     name: 'Verified Customer',
     meta: 'TrustATrader Review',
-    text: 'The team working on the job were the nicest guys and hardest workers I\'ve come across, and I honestly couldn\'t be happier with the result.',
+    text: "The team working on the job were the nicest guys and hardest workers I've come across, and I honestly couldn't be happier with the result.",
   },
   {
     initial: 'E',
@@ -40,13 +41,14 @@ const reviews = [
     initial: 'A',
     name: 'Avril',
     meta: 'TrustATrader Review',
-    text: 'Very efficient, tidy and polite. They kept to the estimate they quoted me and the whole team was professional from start to finish. I was really impressed and would use them again without hesitation.',
+    text: "Very efficient, tidy and polite. They kept to the estimate they quoted me and the whole team was professional from start to finish. I was really impressed and would use them again without hesitation.",
   },
 ];
 
 export default function ReviewsPage() {
   return (
     <>
+      {/* ① WHAT OUR CUSTOMERS SAY — written testimonials */}
       <section className="page-hero">
         <div className="page-hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1800&q=80')" }}></div>
         <div className="container">
@@ -71,18 +73,28 @@ export default function ReviewsPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* GOOGLE REVIEWS WIDGET PLACEHOLDER
-              When ready, delete this block and paste your widget embed code
-              (Elfsight, Trustindex, etc.) in its place. */}
-          <div className="placeholder-box" style={{ marginTop: '48px' }} data-animate>
-            <div className="big-icon"><i data-lucide="star"></i></div>
-            <h3>Live Google Reviews</h3>
-            <p>This space is reserved for a live Google Reviews feed. When you&apos;re ready, paste your widget embed code here in place of this box — popular options include <strong>Elfsight</strong>, <strong>Trustindex</strong>, or your Google Business Profile widget. Search the code for <code>GOOGLE REVIEWS WIDGET PLACEHOLDER</code> to find this spot.</p>
+      {/* ② GOOGLE REVIEWS — intro heading before the live feed */}
+      <section className="section" style={{ background: 'var(--cream-deep)' }}>
+        <div className="container">
+          <div className="section-head" style={{ marginBottom: '0' }}>
+            <span className="eyebrow center" data-animate>Google Reviews</span>
+            <h2 data-animate data-delay="1">Rated 5 stars on Google</h2>
+            <p data-animate data-delay="2">Read our latest verified Google reviews below — straight from the people we&apos;ve worked with across South West London.</p>
           </div>
         </div>
       </section>
 
+      {/* ③ LIVE GOOGLE REVIEWS — Trustindex live widget */}
+      <section className="section" style={{ background: 'var(--cream)' }}>
+        <div className="container">
+          <TrustindexWidget />
+        </div>
+      </section>
+
+      {/* ④ JOIN OUR HAPPY CUSTOMERS — CTA band above footer */}
       <section className="cta section">
         <div className="container">
           <h2 data-animate>Join our happy customers</h2>
@@ -93,6 +105,8 @@ export default function ReviewsPage() {
           </div>
         </div>
       </section>
+
+      {/* ⑤ FOOTER — rendered by the root layout, always last */}
     </>
   );
 }
