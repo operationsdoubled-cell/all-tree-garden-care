@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import TrustindexWidget from '@/components/TrustindexWidget';
 
 export const metadata = {
   title: 'Reviews | All Tree & Garden Care Ltd',
@@ -76,25 +75,7 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      {/* ② GOOGLE REVIEWS — intro heading before the live feed */}
-      <section className="section" style={{ background: 'var(--cream-deep)' }}>
-        <div className="container">
-          <div className="section-head" style={{ marginBottom: '0' }}>
-            <span className="eyebrow center" data-animate>Google Reviews</span>
-            <h2 data-animate data-delay="1">Rated 5 stars on Google</h2>
-            <p data-animate data-delay="2">Read our latest verified Google reviews below — straight from the people we&apos;ve worked with across South West London.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* ③ LIVE GOOGLE REVIEWS — Trustindex live widget */}
-      <section className="section" style={{ background: 'var(--cream)' }}>
-        <div className="container">
-          <TrustindexWidget />
-        </div>
-      </section>
-
-      {/* ④ JOIN OUR HAPPY CUSTOMERS — CTA band above footer */}
+      {/* ② JOIN OUR HAPPY CUSTOMERS — CTA band above footer */}
       <section className="cta section">
         <div className="container">
           <h2 data-animate>Join our happy customers</h2>
