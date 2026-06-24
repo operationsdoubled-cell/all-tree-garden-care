@@ -1,35 +1,35 @@
 /* ============================================================
-   Jolly Goodfellows Gardening — Design System (2026 refresh)
+   Splash of Colour — Design System
    ============================================================
    FONTS  : Fraunces (display serif) + Inter (body) — loaded via
             Google Fonts in each page's <head>.
-   PALETTE: deep forest greens, warm cream canvas, brass accent.
+   PALETTE: deep navy, warm cream canvas, gold accent.
    Edit the variables in :root below to retune the whole site.
    ============================================================ */
 
 :root {
   /* Brand colours */
-  --forest      : #14352a;   /* deepest green — text on light, dark sections */
-  --moss        : #1f5132;   /* primary green */
-  --fern        : #3a7d54;   /* lighter interactive green */
-  --sage        : #8fb89a;   /* soft muted green */
-  --brass       : #b9893f;   /* warm metallic accent */
+  --forest      : #1a2d4e;   /* deepest navy — text on light, dark sections */
+  --moss        : #1e3a6e;   /* primary navy */
+  --fern        : #2d5aa0;   /* lighter interactive blue */
+  --sage        : #7fa0cc;   /* soft muted blue */
+  --brass       : #b9893f;   /* warm gold accent */
   --brass-soft  : #d8b277;
 
   /* Neutrals */
-  --cream       : #f7f4ec;   /* page canvas */
-  --cream-deep  : #efe9db;   /* alt section background */
+  --cream       : #f7f6f2;   /* page canvas */
+  --cream-deep  : #eeeae0;   /* alt section background */
   --paper       : #ffffff;
-  --ink         : #1d2a22;   /* body text */
-  --ink-soft    : #51604f;   /* muted text */
-  --line        : #e3ddcd;   /* hairlines / borders */
+  --ink         : #1a2d4e;   /* body text */
+  --ink-soft    : #4a5a78;   /* muted text */
+  --line        : #e2ddd6;   /* hairlines / borders */
 
   /* Effects */
-  --shadow-sm   : 0 2px 10px rgba(20, 53, 42, 0.06);
-  --shadow-md   : 0 12px 36px rgba(20, 53, 42, 0.10);
-  --shadow-lg   : 0 28px 70px rgba(20, 53, 42, 0.18);
-  --glass       : rgba(247, 244, 236, 0.72);
-  --glass-dark  : rgba(20, 53, 42, 0.55);
+  --shadow-sm   : 0 2px 10px rgba(26, 45, 78, 0.06);
+  --shadow-md   : 0 12px 36px rgba(26, 45, 78, 0.10);
+  --shadow-lg   : 0 28px 70px rgba(26, 45, 78, 0.18);
+  --glass       : rgba(247, 246, 242, 0.72);
+  --glass-dark  : rgba(26, 45, 78, 0.55);
 
   --radius      : 18px;
   --radius-sm   : 12px;
@@ -316,7 +316,7 @@ strong { color: var(--ink); font-weight: 600; }
 .hero-bg {
   position: absolute;
   inset: -8% 0;
-  background-image: url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2000&q=80');
+  background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=2000&q=80');
   background-size: cover;
   background-position: center;
   will-change: transform;
@@ -512,7 +512,7 @@ strong { color: var(--ink); font-weight: 600; }
 .stats::before {
   content: '';
   position: absolute; inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=70');
+  background-image: url('https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1600&q=70');
   background-size: cover; background-position: center;
   opacity: 0.10;
 }
@@ -857,7 +857,7 @@ strong { color: var(--ink); font-weight: 600; }
 .booking-section::before {
   content: '';
   position: absolute; inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1600&q=70');
+  background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=70');
   background-size: cover; background-position: center;
   opacity: 0.12;
 }
@@ -887,7 +887,7 @@ strong { color: var(--ink); font-weight: 600; }
 .cta::before {
   content: '';
   position: absolute; inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1800&q=75');
+  background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=75');
   background-size: cover; background-position: center;
 }
 .cta::after {

@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Gallery | All Tree & Garden Care Ltd',
-  description: 'Gallery of recent work by All Tree & Garden Care Ltd — patios, lawns, driveways, decking and landscaping across South West London.',
+  title: 'Gallery | Splash of Colour',
+  description: 'Gallery of recent painting and decorating work by Splash of Colour across Plymouth and Devon.',
 };
 
 /* HOW TO ADD YOUR PHOTOS
    1. Save your images into the /public/images/ folder.
-   2. Name them: gallery-1.jpg, gallery-2.jpg … gallery-5.jpg
+   2. Name them: gallery-1.jpg, gallery-2.jpg … gallery-6.jpg
       (matching the filenames below).
    3. To add more, copy any object in the list and fill in the details.
       Set tall: true on portrait photos to make them span two rows. */
@@ -15,36 +15,43 @@ const photos = [
   {
     full: '/images/gallery-1.jpg',
     src: '/images/gallery-1.jpg',
-    alt: 'Indian sandstone patio with raised artificial lawn and brick retaining wall',
-    label: 'Indian Sandstone Patio & Raised Lawn — Tooting',
+    alt: 'Interior painting and decorating — living room',
+    label: 'Interior Painting — Plymouth',
     tall: true,
   },
   {
     full: '/images/gallery-2.jpg',
     src: '/images/gallery-2.jpg',
-    alt: 'Artificial lawn with sandstone patio and planted borders',
-    label: 'Artificial Lawn & Planted Borders',
+    alt: 'Interior painting and decorating — bedroom',
+    label: 'Bedroom Decoration',
     tall: true,
   },
   {
     full: '/images/gallery-3.jpg',
     src: '/images/gallery-3.jpg',
-    alt: 'Natural stone paving with timber sleeper raised beds and drainage channel',
-    label: 'Natural Stone Paving & Sleeper Raised Beds',
+    alt: 'Exterior painting — fascias, soffits and windows',
+    label: 'Exterior Painting & Woodwork',
     tall: false,
   },
   {
     full: '/images/gallery-4.jpg',
     src: '/images/gallery-4.jpg',
-    alt: 'Restored Victorian black and white mosaic front path with rebuilt garden wall',
-    label: 'Victorian Mosaic Front Path',
+    alt: 'Wallpapering — feature wall',
+    label: 'Feature Wall Wallpapering',
     tall: true,
   },
   {
     full: '/images/gallery-5.jpg',
     src: '/images/gallery-5.jpg',
-    alt: 'Raised timber decking and lawn — rear garden transformation',
-    label: 'Raised Timber Decking & Lawn',
+    alt: 'Commercial decorating — office interior',
+    label: 'Commercial Decorating',
+    tall: false,
+  },
+  {
+    full: '/images/gallery-6.jpg',
+    src: '/images/gallery-6.jpg',
+    alt: 'Painting and decorating — hallway and stairs',
+    label: 'Hallway & Staircase Decoration',
     tall: false,
   },
 ];
@@ -57,7 +64,7 @@ export default function GalleryPage() {
         <div className="container">
           <span className="eyebrow center" data-animate>Our Recent Work</span>
           <h1 data-animate data-delay="1">Work we&apos;re proud of</h1>
-          <p data-animate data-delay="2">A selection of recent projects across South West London. Click any photo to take a closer look.</p>
+          <p data-animate data-delay="2">A selection of recent painting and decorating projects across Plymouth and Devon. Click any photo to take a closer look.</p>
         </div>
       </section>
 
@@ -80,7 +87,7 @@ export default function GalleryPage() {
           </div>
 
           <div className="note-box" data-animate>
-            <strong>To add your photos:</strong> save your images into <code>/public/images/</code> named <code>gallery-1.jpg</code> through <code>gallery-5.jpg</code>. They will appear automatically. Add more by editing the <code>photos</code> list at the top of this file.
+            <strong>To add your photos:</strong> save your images into <code>/public/images/</code> named <code>gallery-1.jpg</code> through <code>gallery-6.jpg</code>. They will appear automatically.
           </div>
         </div>
       </section>
@@ -88,9 +95,9 @@ export default function GalleryPage() {
       <section className="cta section">
         <div className="container">
           <h2 data-animate>Like what you see?</h2>
-          <p data-animate data-delay="1">Get in touch to discuss what we can do for your outdoor space.</p>
+          <p data-animate data-delay="1">Get in touch to discuss what we can do for your property.</p>
           <div className="cta-actions" data-animate data-delay="2">
-            <a href="tel:07515695202" className="btn btn-brass"><i data-lucide="phone"></i> 07515 695202</a>
+            <a href="tel:07950582891" className="btn btn-brass"><i data-lucide="phone"></i> 07950 582891</a>
             <Link href="/contact" className="btn btn-ghost">Send a Message <i data-lucide="arrow-right"></i></Link>
           </div>
         </div>

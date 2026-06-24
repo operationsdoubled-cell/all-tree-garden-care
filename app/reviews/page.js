@@ -1,62 +1,57 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Reviews | All Tree & Garden Care Ltd',
-  description: 'Customer reviews for All Tree & Garden Care Ltd — see what South London homeowners say about our landscaping, tree surgery and paving work.',
+  title: 'Reviews | Splash of Colour',
+  description: 'See what customers say about Splash of Colour — 5-star painting and decorating in Plymouth and Devon.',
 };
 
 const reviews = [
   {
-    initial: 'M',
-    name: 'Mark Evans',
-    meta: 'Google Review',
-    text: 'Tyrone and his team have been amazing over the years on many of our projects — garden, landscaping, fencing and paving all done to a high standard and in a good timeframe. Years of experience between them and a no-problem attitude.',
+    initial: 'J',
+    name: 'John C',
+    meta: 'FreeIndex Review',
+    text: 'Brilliant job done on the interior of our house. Really tidy, professional and the finish is spot on. Would highly recommend to anyone looking for a good decorator in Plymouth.',
   },
   {
-    initial: 'T',
-    name: 'Verified Customer',
-    meta: 'TrustATrader Review',
-    text: "The team have been excellent, both with communication and getting the job done in the garden. I've been really impressed and will definitely be using them again.",
+    initial: 'W',
+    name: '38 Waycott Walk',
+    meta: 'FreeIndex Review',
+    text: 'Very pleased with the work done at our property. The preparation was thorough and the finish is excellent. Turned up when he said he would and cleaned up every day. Great service.',
   },
   {
-    initial: 'V',
-    name: 'Verified Customer',
-    meta: 'TrustATrader Review',
-    text: 'Great communication from start to finish. Friendly and professional team — all-round great service.',
+    initial: 'S',
+    name: 'Stephen Tomlinson',
+    meta: 'FreeIndex Review',
+    text: 'Used Splash of Colour for exterior painting — fascias, soffits and windows. Really good work, took his time to do it properly and the result looks great. Fair price too.',
   },
   {
-    initial: 'V',
-    name: 'Verified Customer',
-    meta: 'TrustATrader Review',
-    text: "The team working on the job were the nicest guys and hardest workers I've come across, and I honestly couldn't be happier with the result.",
+    initial: 'N',
+    name: 'Nicola Sawbridge',
+    meta: 'FreeIndex Review',
+    text: 'Hired for wallpapering in the lounge and bedroom. Really careful work — pattern perfectly matched throughout, no bubbles, clean edges. Very happy with how it turned out.',
   },
   {
-    initial: 'E',
-    name: 'Emma S.',
-    meta: 'TrustATrader Review',
-    text: 'The crew were friendly, and so fast! They always clarified things and amended their quote when needed. The work was done to a very high standard and they left everything spotless. Highly recommend.',
-  },
-  {
-    initial: 'A',
-    name: 'Avril',
-    meta: 'TrustATrader Review',
-    text: "Very efficient, tidy and polite. They kept to the estimate they quoted me and the whole team was professional from start to finish. I was really impressed and would use them again without hesitation.",
+    initial: 'P',
+    name: 'Pete M',
+    meta: 'FreeIndex Review',
+    text: "Good communication, arrived on time every day and did a thorough job. The rooms look fantastic — much better than previous decorators we've used. Will be using again for the rest of the house.",
   },
 ];
 
 export default function ReviewsPage() {
   return (
     <>
-      {/* ① WHAT OUR CUSTOMERS SAY — written testimonials */}
+      {/* 1. PAGE HERO */}
       <section className="page-hero">
-        <div className="page-hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1800&q=80')" }}></div>
+        <div className="page-hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80')" }}></div>
         <div className="container">
           <span className="eyebrow center" data-animate>Testimonials</span>
           <h1 data-animate data-delay="1">What our customers say</h1>
-          <p data-animate data-delay="2">Don&apos;t just take our word for it — here&apos;s what homeowners and businesses across South London think of our work.</p>
+          <p data-animate data-delay="2">100% 5-star reviews from customers across Plymouth and Devon.</p>
         </div>
       </section>
 
+      {/* 2. REVIEWS GRID */}
       <section className="section bg-cream-deep">
         <div className="container">
           <div className="grid grid-3">
@@ -75,19 +70,17 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      {/* ② JOIN OUR HAPPY CUSTOMERS — CTA band above footer */}
+      {/* 3. CTA */}
       <section className="cta section">
         <div className="container">
           <h2 data-animate>Join our happy customers</h2>
           <p data-animate data-delay="1">Free, no-obligation quotes — get in touch today.</p>
           <div className="cta-actions" data-animate data-delay="2">
-            <a href="tel:07515695202" className="btn btn-brass"><i data-lucide="phone"></i> 07515 695202</a>
-            <Link href="/contact" className="btn btn-ghost">Send a Message <i data-lucide="arrow-right"></i></Link>
+            <a href="tel:07950582891" className="btn btn-brass"><i data-lucide="phone"></i> 07950 582891</a>
+            <Link href="/contact" className="btn btn-ghost">Get in Touch <i data-lucide="arrow-right"></i></Link>
           </div>
         </div>
       </section>
-
-      {/* ⑤ FOOTER — rendered by the root layout, always last */}
     </>
   );
 }

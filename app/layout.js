@@ -5,9 +5,9 @@ import Footer from '@/components/Footer';
 import Effects from '@/components/Effects';
 
 export const metadata = {
-  title: 'All Tree & Garden Care Ltd | Landscaping, Tree Surgery & Paving in Tooting, SW London',
+  title: 'Splash of Colour | Painter & Decorator in Plymouth, Devon',
   description:
-    'Family-run landscaping, tree care, paving and fencing specialists in Tooting, SW17. Over 10 years\' experience across South West London. Call 07515 695202 for a free quote.',
+    'Professional painting and decorating in Plymouth and across Devon. Interior, exterior, wallpapering and commercial work. Fully qualified and insured. Call 07950 582891 for a free quote.',
 };
 
 export default function RootLayout({ children }) {

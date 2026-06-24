@@ -20,10 +20,10 @@ export default function Header() {
       <div className="container">
         <nav className="nav-inner">
           <Link href="/" className="nav-logo">
-            <span className="nav-logo-mark"><i data-lucide="leaf"></i></span>
+            <span className="nav-logo-mark"><i data-lucide="paint-roller"></i></span>
             <span className="nav-logo-text">
-              <strong>All Tree &amp; Garden Care</strong>
-              <span>Landscaping · Tree Care · SW London</span>
+              <strong>Splash of Colour</strong>
+              <span>Painter &amp; Decorator · Plymouth</span>
             </span>
           </Link>
 
